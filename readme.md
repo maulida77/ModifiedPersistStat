@@ -18,7 +18,7 @@ Experiments with three datasets were developed that you can find in the followin
 
 | Dataset        |
 |----------------|
-| [Batik300] (https://)          |
+| [Batik300] (https://github.com/maulida77/Modified_Persistence_Statistics/blob/main/run_batik300.py)         |
 | [BatikNitik960] (https://)      |
 | [Outex] (https://)      |
 
