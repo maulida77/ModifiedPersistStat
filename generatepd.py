@@ -6,9 +6,11 @@ import gudhi as gd
 path_diag = "Batik300/pdiagrams/" #"BatikNitik960/pdiagrams/" #"Outex-TC-00024/pdiagrams/"
 index=range(300) #960 for batiknitik #2720 for Outex
 
-for i in index:
-    file_path = "Batik300/data/images/"+str(i)+".jpg"  # "BatikNitik960/data/images/"+str(i)+".jpg" # "Outex-TC-00024/data/images/"+str(i)+".jpg"
+images_names = os.listdir('Outex-TC-00024/data/images') #for outex
+images_names = list(filter(lambda x : x[0]!='.', images_names)) #for outex
 
+for i in index:
+    file_path = "Batik300/data/images/"+str(i)+".jpg"  # "BatikNitik960/data/images/"+str(i)+".jpg" # "Outex-TC-00024/data/images/"+str(images_names[i])
     data = Image.open(file_path)
     data = data.convert("L")
     data = np.array(data)
