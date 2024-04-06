@@ -12,8 +12,8 @@ for i in index:
     data = Image.open(file_path)
     data = data.convert("L")
     data = np.array(data)
-    dim1=128 #512 for batiknitik #
-    dim2=128 #512 for batiknitik
+    dim1=128 # 512 for batiknitik # 128 for batik300 and outex 
+    dim2=128 # 512 for batiknitik # 128 for batik300 and outex 
     data_gudhi = np.resize(data, [dim1, dim2])
     data_gudhi = data_gudhi.reshape(dim1*dim2,1)
     cub_filtration_l = gd.CubicalComplex(dimensions = [dim1,dim2], top_dimensional_cells=data_gudhi)
