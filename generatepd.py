@@ -3,7 +3,7 @@ from PIL import Image
 import gudhi as gd
 
 
-path_diag = "Batik300/pdiagrams/"
+path_diag = "Batik300/pdiagrams/" #"BatikNitik960/pdiagrams/" #"Outex-TC-00024/pdiagrams/"
 index=range(300) #960 for batiknitik #2720 for Outex
 
 for i in index:
